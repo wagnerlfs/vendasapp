@@ -12,7 +12,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 public class ClienteController
 {
-
     @Autowired
     @Qualifier("ApplicationName")
     private String applicationName;
