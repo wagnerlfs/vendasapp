@@ -1,30 +1,25 @@
 package br.com.wble.springbootexpert.vendas.vendas.dto;
 
-import br.com.wble.springbootexpert.vendas.vendas.model.Cliente;
+import br.com.wble.springbootexpert.vendas.vendas.entity.Cliente;
+import lombok.Getter;
+import lombok.Setter;
 
 public class ClienteDTO {
 
+    @Getter
+    @Setter
     private Long id;
 
-    public Long getId() {
-        return id;
-    }
-
+    @Getter
+    @Setter
     private String nome;
-    public String getNome() {
-        return nome;
-    }
 
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
+    @Getter
+    @Setter
+    private String email;
 
-    public ClienteDTO(Long id, String nome) {
-        this.id = id;
-        this.nome = nome;
-    }
-    public ClienteDTO(Cliente cliente) {
-        this.id = cliente.getId();
-        this.nome = cliente.getNome();
-    }
+    @Getter
+    @Setter
+    private String cpfcnpj;
+
 }
